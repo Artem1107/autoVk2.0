@@ -32,6 +32,10 @@ public class AuthorizationPage {
     @FindBy(xpath="//input[@name = 'password'] ")
     private WebElement passwdField;
 
+    //Всплывающая подсказка Неверный пароль
+    @FindBy(xpath = "//div[@class=\"vkc__TextField__tooltip\"]")
+    private WebElement hintFalsePass;
+
     //Метод ввода логина
     public void inputLogin (String login) {
         loginField.sendKeys(login);
@@ -52,6 +56,14 @@ public class AuthorizationPage {
     //Метод ввода пароля
     public void inputPasswd(String passwd) {
         passwdField.sendKeys(passwd); }
+
+    /**
+     * метод для получения текста подсказки
+     */
+
+    public String getTextHint() {
+        String hintText = hintFalsePass.getText();
+        return hintText; }
     }
 
 

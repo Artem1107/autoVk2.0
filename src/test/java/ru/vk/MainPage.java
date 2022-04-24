@@ -20,7 +20,7 @@ public class MainPage {
     private WebElement userMenu;
 
     //Кнопка выход
-    @FindBy(xpath="//div[@class = 'EcosystemAccountMenu_name__1wHzk']")
+    @FindBy(id="top_logout_link")
     private WebElement logOutBtn;
 
     /**
