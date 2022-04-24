@@ -13,7 +13,7 @@ public class AuthorizationPage {
         this.driver = driver; }
 
     //Кнопка вход
-    @FindBy(xpath="//button[@class=\"FlatButton FlatButton--primary FlatButton--size-l FlatButton--round FlatButton--wide VkIdForm__button VkIdForm__signInButton\"]")
+    @FindBy(xpath="//button[@class=\"FlatButton FlatButton--primary FlatButton--size-l FlatButton--wide VkIdForm__button VkIdForm__signInButton\"]")
     private WebElement entryBtn;
 
     //Поле номер или емаил

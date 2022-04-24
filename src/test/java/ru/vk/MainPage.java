@@ -31,7 +31,6 @@ public class MainPage {
         String userName = userMenu.getText();
         return userName; }
 
-
     /**
      * метод для нажатия кнопки меню пользователя
      */
